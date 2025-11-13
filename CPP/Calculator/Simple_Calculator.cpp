@@ -17,7 +17,7 @@ int main()
 
     //for Operators 
     char Choice;
-    //used as a way to keep the last number obtained to keep doing calculations
+    //used as a variable to save the last number obtained for doing more calculations
     long double h_choice;
 
     cout << "Enter a number: ";
