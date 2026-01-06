@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 # Data (Clash royal Decks)
 #x - nr. of total matches (as of 4 Jan 2026)
 #y - Win % rate (just the wins)
 #labels - the deck names
+
 x = np.array([137825, 91110, 54782, 119070, 64270, 66052, 52180, 43731])
 y = np.array([59.1, 56.2, 53.9, 53.3, 61.1, 50.8, 59.4, 57.1])
 labels = [
@@ -23,6 +23,7 @@ colors = np.array([59, 56, 54, 53, 61, 50, 59, 57])
 
 #for the names of each individual dot with their corresponding deck name
 fig, ax = plt.subplots(figsize=(6, 5))
+
 #fig - the entire image
 #ax - the actual plotting area (dots, lines, labels, etc)
 
@@ -61,7 +62,7 @@ ax.annotate(
 
 
 #Chart name, xAxis and yAxis with their names + a Grid-----------------------------------------------------------------------------------------------------------------------------
-ax.set_title("Best Win % Rate Decks (Last 7 Days, 10k–12k trophies) as of 4th of January 2026")
+ax.set_title("CR Deck and their Win % Rate (Last 7 Days, 10k–12k trophies) as of 4th of January 2026")
 ax.set_xlabel("Number of matches")
 ax.set_ylabel("Win % rate")
 ax.grid(True)
@@ -70,4 +71,5 @@ ax.grid(True)
 
 #makes it so that the text fits in
 fig.tight_layout()
+
 plt.show()
